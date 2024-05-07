@@ -1,0 +1,35 @@
+:root {
+  font-family: "freeman", system-ui;
+}
+
+body {
+  display: grid ;
+  justify-content: center;
+}
+.container {
+  max-size: 60rem;
+  border: 2px solid black;
+  display: grid;
+  grid-template-columns: 30% 70%;
+} 
+
+.sidebar {
+  margin: 3px;
+  border: 2px solid red;
+
+}
+
+.signup {
+  width: inherit;
+  margin: 3px;
+  display: grid;
+  border: solid 2px red;
+}
+
+/* form {
+  margin: 3px;
+  display: grid;
+  grid-template-columns: 50%;
+  border: solid 2px red;
+  overflow:auto;
+} */
