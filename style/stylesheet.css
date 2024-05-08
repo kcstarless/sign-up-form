@@ -1,35 +1,65 @@
 :root {
   font-family: "freeman", system-ui;
+  font-size: 16px;
+  color: rgb(206, 30, 30);
 }
 
 body {
   display: grid ;
   justify-content: center;
+  margin: 0px;
 }
 .container {
-  max-size: 60rem;
-  border: 2px solid black;
   display: grid;
   grid-template-columns: 30% 70%;
 } 
 
 .sidebar {
-  margin: 3px;
-  border: 2px solid red;
-
+  background-image: url('../img/bobs_sidebar.jpg');
+  background-size: cover;
+  background-position: center;
 }
 
 .signup {
-  width: inherit;
-  margin: 3px;
   display: grid;
-  border: solid 2px red;
+  align-items: center;
+  grid-template-rows: 30vh 40vh 29vh;
+  background-color: #f3f8ff;
 }
 
-/* form {
-  margin: 3px;
+.signup-header {
+  font-size: 1.7rem;
+  margin-left: 15px;
+}
+
+.signup-form {
   display: grid;
-  grid-template-columns: 50%;
-  border: solid 2px red;
-  overflow:auto;
-} */
+  grid-template-columns: 0.3fr 1fr;
+  grid-template-rows: 10vh 10vh 10vh;
+  column-gap: 5ch;
+  margin: 0px;
+  background-color: white;
+}
+
+.signup-footer {
+  margin-left: 15px;
+}
+
+label {
+  margin: 10px;
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+}
+
+input {
+  height: 25px;
+  width: 40ch;
+  letter-spacing: 2px;
+}
+
+fieldset{
+  border: 0px;
+}
+legend {
+  font-size: 1.5rem;
+}
