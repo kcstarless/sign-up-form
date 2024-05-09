@@ -1,7 +1,7 @@
 :root {
   font-family: "freeman", system-ui;
   font-size: 16px;
-  color: rgb(206, 30, 30);
+  color: #688548;
 }
 
 body {
@@ -23,8 +23,10 @@ body {
 .signup {
   display: grid;
   align-items: center;
-  grid-template-rows: 30vh 40vh 29vh;
+  grid-template-rows: 30vh 40vh 30vh;
   background-color: #f3f8ff;
+  border-left: 1px solid black;
+
 }
 
 .signup-header {
@@ -34,11 +36,12 @@ body {
 
 .signup-form {
   display: grid;
-  grid-template-columns: 0.3fr 1fr;
-  grid-template-rows: 10vh 10vh 10vh;
+  grid-template-columns: 0.3fr 0.3fr;
   column-gap: 5ch;
   margin: 0px;
   background-color: white;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  color: rgb(206, 30, 30);
 }
 
 .signup-footer {
@@ -55,11 +58,72 @@ input {
   height: 25px;
   width: 40ch;
   letter-spacing: 2px;
+  /* border: 0px; */
+  outline: none;
 }
+
+input:focus {
+  border: solid 2px rgb(206, 30, 30);
+}
+
+input#password:invalid,
+input#re_password:invalid {
+  /* border: solid 2px red; */
+}
+
 
 fieldset{
   border: 0px;
+  border-top: solid 1px black;
 }
 legend {
   font-size: 1.5rem;
+  color: #688548;
+}
+
+button {
+  width: 25ch;
+  height: 5ch;
+  border-radius: 1ch;
+  border: 0px;
+  background-color: #688548;
+  font-size: 1.2rem;
+  color: white;
+  font-weight: bolder;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.menu {
+  margin-top: 200px;
+  display: flex;
+  /* background-color:  rgba(175, 175, 173, 0.281); */
+  height: 10ch;
+}
+
+.menu > .logo {
+  width: 50px;
+  height: 50px;
+  /* display: block; */
+  margin: auto;
+  margin-right: 10px;
+}
+
+.menu > span {
+  /* color: white; */
+  margin: auto;
+  margin-left: 10px;
+  margin-right: 20px;
+  font-size: 1.5rem;
+}
+
+a {
+  color: rgb(206, 30, 30);
+}
+
+p {
+  margin: 2px
+}
+
+p#have_account {
+  margin: 10px;
 }

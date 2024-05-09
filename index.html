@@ -15,37 +15,44 @@
 </head>
 <body>
     <div class="container">
-        <div class="sidebar"></div>
+        <div class="sidebar">
+            <div class="menu">
+                <!-- <img src="img/burger.png" class="logo"><span>Create account</span> -->
+            </div>
+        </div>
             
         <div class="signup">
             <div class="signup-header">
                 A third-generation restaurateur, Bob Belcher, deals with various situations while running his dream restaurant with the help of his uptight wife and their three underachieving kids.
             </div>
-            <form method="post">
+            <form method="post" id="create-account">
                 <fieldset class="signup-form">
-                <legend>Sign up to newsletter!</legend>
-                <label for="firstname">FIRST NAME <br>
-                    <input type="text" id="firstname" placeholder="eg. John" name="first_name">
-                </label>    
-                <label for="lastname">LAST NAME<br>
-                    <input type="text" id="lastname" placeholder="eg. Smith" name="last_name">
-                </label>
-                <label for="email">EMAIL<br>
-                    <input type="email" id="email" placeholder="eg. john.smith@gmail.com" name="email_address">
-                </label>
-                <label for="phone">PHONE NUMBER<br>
-                    <input type="tel" id="phone" placeholder="eg. 0423234252" name="phone_number">
-                </label>
-                <label for="password">PASSWORD<br>
-                    <input type="password" id="password" placeholder="" name="password">
-                </label>
-                <label for="repassword">CONFIRM PASSWORD<br>
-                    <input type="password" id="repassword" placeholder="" name="re_password">
-                </label>
+                    <legend>Let's get you started!</legend>
+                    <label for="first_name">FIRST NAME <br>
+                        <input type="text" id="first_name" placeholder="eg. John" name="first_name" minlength="2" required>
+                    </label>    
+                    <label for="last_name">LAST NAME<br>
+                        <input type="text" id="last_name" placeholder="eg. Smith" name="last_name" minlength="2" required>
+                    </label>
+                    <label for="email_address">EMAIL<br>
+                        <input type="email" id="email_address" placeholder="eg. john.smith@gmail.com" name="email_address" required>
+                    </label>
+                    <label for="phone_number">PHONE NUMBER<br>
+                        <input type="tel" id="phone_number" placeholder="eg. 0423234252" name="phone_number" required>
+                    </label>
+                    <label for="password">PASSWORD<br>
+                        <input type="password" id="password" placeholder="***********" name="password" required="" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"><br>
+                        <p>Must be certain length and so on....</p>
+                    </label>
+                    <label for="re_password">CONFIRM PASSWORD<br>
+                        <input type="password" id="re_password" placeholder="***********" name="re_password" required><br>
+                        <p>Must match password</p>
+                    </label>
                 </fieldset>
             </form>
             <div class="signup-footer">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias consequatur earum nulla ex doloremque ipsam voluptatem optio sapiente! Aspernatur est consectetur provident nobis nulla, neque ab beatae itaque et consequatur?
+                <button type="submit" form="create-account">Create account</button>
+                <p id="have_account">Already have an account? <a href="#">log in</a></p>
             </div>
         </div>
     </div>
